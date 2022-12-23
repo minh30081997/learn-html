@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images</title>
+</head>
+
+<body>
+    <div>
+        <!-- img  -->
+        <!-- attribute: alt, src, height, width, ismap, usemap, loading, longdesc, sizes, srcset,referrerpolicy,...  -->
+        <img src="image1.jpeg" alt="Picture" width="" height="">
+    </div>
+
+    <div>
+        <!-- figure, figcaption  -->
+        <figure>
+            <img src="image2.jpeg" alt="Picture" width="" height="" loading="eager">
+            <figcaption>Picture 2</figcaption>
+            <img src="image1.jpeg" alt="Picture">
+            <figcaption>Picture 1</figcaption>
+        </figure>
+        <figure>
+            <img src="image1.jpeg" alt="Picture">
+            <figcaption>Picture 1</figcaption>
+        </figure>
+    </div>
+
+    <div>
+        <!-- picture, source  -->
+        <picture>
+            <source media="(min-width:650px)" srcset="image1.jpeg">
+            <source media="(min-width:450px)" srcset="img_white_flowers.jpg">
+            <img src="image2.jpeg" alt="Flowers" style="width: auto;">
+        </picture>
+    </div>
+</body>
+
+</html>
