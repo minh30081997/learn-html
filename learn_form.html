@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <div>
+        <form action="learn_form.html" method="get">
+            <!-- form textarea  -->
+            <!-- attribute: autofocus, cols, rows, disable, form, maxlength, name, placeholder, readonly, required, rows,... -->
+            <label for="form-textarea">Review of Facebook: </label>
+            <textarea name="form_textarea" id="form-textarea" cols="30" rows="10" placeholder="Review here"
+                required></textarea>
+            <hr>
+
+            <!-- form button  -->
+            <!-- include elements: i, b, strong, br, img,...  -->
+            <!-- attribute: autofocus, disable, form, name, value, type,...  -->
+            <button type="button" name="button" id="button">Click Me</button>
+            <button type="button" name="button" id="button" style="color: blue;">Click Me</button>
+            <button type="button" name="button" id="button"><strong>Click Me</strong></button>
+            <button type="reset" name="reset" id="reset">Reset</button>
+            <button type="submit" name="button_submit" id="button-submit"><b>Submit</b></button>
+            <hr>
+
+            <!-- form select  -->
+            <!-- attribute: autofocus, disable, form, multiple, name, required, size,selected...  -->
+            <label for="laptop">Choose Laptop: </label>
+            <select name="laptop_name" id="laptop-id" required>
+                <option value="dell">Dell</option>
+                <option value="acer" selected>Acer</option>
+                <option value="hp">HP</option>
+            </select>
+            <hr>
+
+            <!-- form optgroup  -->
+            <!-- attribute: label, disable,...  -->
+            <label for="book-id">Choose a book: </label>
+            <select name="book_name" id="book-id" required>
+                <optgroup label="Programming Book">
+                    <option value="html">HTML Book</option>
+                    <option value="css">CSS Book</option>
+                </optgroup>
+                <optgroup label="Math Book">
+                    <option value="algebra">Algebra Book</option>
+                    <option value="geometry" selected>Geometry Book</option>
+                </optgroup>
+            </select>
+            <hr>
+
+            <!-- form datalist  -->
+            <label for="language-id">Choose Language: </label>
+            <input type="text" id="language-id" name="language_name" list="language_list">
+            <datalist id="language_list">
+                <option value="html"></option>
+                <option value="css"></option>
+                <option value="js"></option>
+            </datalist>
+            <hr>
+
+            <!-- form field  -->
+            <!-- attribute: disable, form, name,...  -->
+            <form action="learn_form.html" method="get">
+                <fieldset name="form_fieldset">
+                    <legend>Personal</legend>
+                    <label for="firstname_id">First name: </label> <br>
+                    <input type="text" name="first_name" id="firstname_id"> <br>
+                    <label for="lastname_id">Last name: </label> <br>
+                    <input type="text" name="last_name" id="lastname_id"> <br>
+                    <label for="email_id">Email: </label> <br>
+                    <input type="email" name="email" id="email_id"> <br>
+                    <label for="birthday_id">Birthday: </label> <br>
+                    <input type="date" name="birthday" id="birthday_id"> <br>
+                    <input type="submit" name="submit">
+                </fieldset>
+            </form>
+            <hr>
+        </form>
+    </div>
+</body>
+
+</html>
